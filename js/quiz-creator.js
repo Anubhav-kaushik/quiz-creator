@@ -36,7 +36,6 @@ function createQuizSectionHtml(sectionName, sectionData, sectionNumber, columnNa
     sectionNameEle.innerHTML = sectionName;
     section.append(sectionNameEle);
 
-    console.log(sectionData);
     let questionNumber = 1;
     for (let questionData of sectionData) {
         const questionBlock = document.createElement('div');
