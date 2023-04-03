@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="css/quiz-style.css">
+</head>
+
+<body>
+    <main>
+        <section class="quiz">
+            <h1>
+                Exam Name
+            </h1>
+            <section class="quiz-section">
+                <h2 class="quiz-section-name">
+                    Section Name
+                </h2>
+                <div class="question-block">
+                    <div class="question-block-inner">
+                        <div class="question-text">
+                            <h3>Who or what is Fluffy? 🐩🐑</h3>
+                        </div>
+                        <div class="question-response">
+                            <div class="multiplechoice-el">
+                                <form>
+                                    <input name="mc-3" id="mc-3-0" type="radio"
+                                        data-value="Dumbledore's nickname for Professor Flitwick"><label for="mc-3-0">Dumbledore's
+                                        nickname for Professor Flitwick</label><input name="mc-3" id="mc-3-1"
+                                        type="radio" data-value="A three-headed dog"><label for="mc-3-1">A
+                                        three-headed dog</label><input name="mc-3" id="mc-3-2" type="radio"
+                                        data-value="The name of Hermione's cat"><label for="mc-3-2">The
+                                        name of Hermione's cat</label></form>
+                            </div>
+                        </div>
+                        <div class="question-submit">
+                            <button class="submit-answer" disabled="">Submit</button>
+                        </div>
+                        <!-- <div class="feedback-container" style="margin-top: 1.2rem; padding-top: 1.2rem;">
+                            <p class="feedback-text"></p>
+                            <div class="feedback-media"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="js/action.js"></script>
+    <script src="js/quiz-creator.js"></script>
+</body>
+
+</html>

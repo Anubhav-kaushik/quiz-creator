@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/quiz-style.css">
+</head>
+<body>
+    <main>
+        <input type="text" name="quiz data" id="quiz-data-input">
+        <button onclick="main()">Create Quiz</button>
+    </main>
+
+    <script src="js/action.js"></script>
+    <script src="js/quiz-creator.js"></script>
+
+    <script>
+        function main(){
+            const inputData = document.querySelector('#quiz-data-input').value;
+
+            let feedableData = JSON.parse(inputData);
+
+            const quiz = createQuiz(feedableData, 'SSC CGSL');
+
+            const block = document.querySelector('main');
+            block.innerHTML = quiz.outerHTML;
+        }
+    </script>
+</body>
+</html>
