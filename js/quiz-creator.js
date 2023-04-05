@@ -102,6 +102,16 @@ function createMCQ(questionData, columnNames, sectionNumber, questionNumber) {
         const label = document.createElement('label');
         label.setAttribute('for', `mc-${sectionNumber}${questionNumber}-${optionNumber}`);
         label.innerHTML = option;
+        if (option == questionData[columnNames['correctOption']]) {
+            label.addEventListener('click', () => {
+                label.setAttribute('status', 'correct');
+            });
+        } else {
+            label.addEventListener('click', () => {
+                label.setAttribute('status', 'incorrect');
+            });
+        }
+
         mcqForm.append(label);
 
         optionNumber++;

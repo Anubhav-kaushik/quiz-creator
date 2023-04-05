@@ -139,6 +139,16 @@
     border-radius: 100px;
 }
 
+.quiz-section .question-block .question-block-inner .multiplechoice-el form label[status="correct"] {
+    background-color: rgba(1, 196, 1, 0.407);
+    border: 2px solid rgb(1, 196, 1);
+}
+
+.quiz-section .question-block .question-block-inner .multiplechoice-el form label[status="incorrect"] {
+    background-color: rgba(196, 39, 0, 0.399);
+    border: 2px solid rgb(196, 39, 0);
+}
+
 .quiz-section .question-block .question-block-inner .submit-answer {
     background-color: rgb(33, 114, 171);
     color: rgb(255, 255, 255);
