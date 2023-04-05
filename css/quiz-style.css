@@ -19,17 +19,17 @@
 .quiz h1::before {
     content: '';
     position: absolute;
-    width: 0.25em;
+    width: 0.2em;
     height: 100%;
     top: 0;
-    left: -0.25em;
+    left: -0.2em;
     background: inherit;
 }
 
 .quiz h1::after {
     content: '';
     position: absolute;
-    width: 0.25em;
+    width: 0.2em;
     height: 100%;
     top: 0;
     left: 100%;
