@@ -1,9 +1,82 @@
-.quiz {
-    border: 2px solid black;
+:root {
+    --clr-accent-1: 0, 100%, 67%;
+    --clr-accent-2: 30, 100%, 56%;
+    --clr-accent-3: 120, 100%, 37%;
+    --clr-accent-4: 180, 85%, 45%;
+    --clr-accent-5: 240, 85%, 45%;
+    --clr-accent-6: 360, 85%, 45%;
+}
+
+.quiz h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-block: 0.25em;
+    text-decoration: underline;
 }
 
 .quiz-section {
-    border: 2px solid red;
+    padding: 0.25em;
+    position: relative;
+    margin-block: 0.5em;
+}
+
+.quiz-section .quiz-section-name {
+    padding: .5em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: sticky;
+    top: -0.25em;
+    color: white;
+    z-index: 999;
+}
+
+.quiz-section[section="1"] {
+    background: hsla(var(--clr-accent-1), 0.5);
+}
+
+.quiz-section[section="1"] .quiz-section-name {
+    background: hsl(var(--clr-accent-1));
+}
+
+.quiz-section[section="2"] {
+    background: hsla(var(--clr-accent-2), 0.5);
+}
+
+.quiz-section[section="2"] .quiz-section-name {
+    background: hsl(var(--clr-accent-2));
+}
+
+.quiz-section[section="3"] {
+    background: hsla(var(--clr-accent-3), 0.5);
+}
+
+.quiz-section[section="3"] .quiz-section-name {
+    background: hsl(var(--clr-accent-3));
+}
+
+.quiz-section[section="4"] {
+    background: hsla(var(--clr-accent-4), 0.5);
+}
+
+.quiz-section[section="4"] .quiz-section-name {
+    background: hsl(var(--clr-accent-4));
+}
+
+.quiz-section[section="5"] {
+    background: hsla(var(--clr-accent-5), 0.5);
+}
+
+.quiz-section[section="5"] .quiz-section-name {
+    background: hsl(var(--clr-accent-5));
+}
+
+.quiz-section[section="6"] {
+    background: hsla(var(--clr-accent-6), 0.5);
+}
+
+.quiz-section[section="6"] .quiz-section-name {
+    background: hsl(var(--clr-accent-6));
 }
 
 .quiz-section .question-block {
