@@ -30,6 +30,7 @@ function createQuizSectionHtml(sectionName, sectionData, sectionNumber, columnNa
 }) {
     const section = document.createElement('section');
     section.classList.add('quiz-section');
+    section.setAttribute(`section`, `${sectionNumber}`)
 
     const sectionNameEle = document.createElement('h2');
     sectionNameEle.classList.add('quiz-section-name');
