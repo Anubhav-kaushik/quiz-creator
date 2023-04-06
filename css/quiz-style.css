@@ -21,6 +21,16 @@
     position: relative;
     margin-block: 0.5em;
     padding-top: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.quiz-section[size="collapsed"] {
+    height: 3.25rem;
+}
+
+.quiz-section[size="expanded"] {
+    height: auto;
 }
 
 .quiz-section .quiz-section-name {
@@ -139,12 +149,12 @@
     border-radius: 100px;
 }
 
-.quiz-section .question-block .question-block-inner .multiplechoice-el form label[status="correct"] {
+.quiz-section .question-block .question-block-inner .multiplechoice-el form input:checked+label[status="correct"] {
     background-color: rgba(1, 196, 1, 0.407);
     border: 2px solid rgb(1, 196, 1);
 }
 
-.quiz-section .question-block .question-block-inner .multiplechoice-el form label[status="incorrect"] {
+.quiz-section .question-block .question-block-inner .multiplechoice-el form input:checked+label[status="incorrect"] {
     background-color: rgba(196, 39, 0, 0.399);
     border: 2px solid rgb(196, 39, 0);
 }
