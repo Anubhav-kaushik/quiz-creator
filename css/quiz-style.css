@@ -21,13 +21,13 @@
     position: relative;
     margin-block: 0.5em;
     padding-top: 0;
-    overflow: hidden;
     transition: height 0.5s;
     cursor: pointer;
 }
 
 .quiz-section[size="collapsed"] {
     height: 3.25rem;
+    overflow: hidden;
 }
 
 .quiz-section[size="expanded"] {
