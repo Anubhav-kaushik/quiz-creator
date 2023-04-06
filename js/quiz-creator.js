@@ -38,7 +38,6 @@ function createQuizSectionHtml(sectionName, sectionData, sectionNumber, columnNa
     sectionNameEle.innerHTML = sectionName;
     sectionNameEle.addEventListener('click', () => {
         const size = section.getAttribute('size');
-        console.log(`Size: ${size}`);
 
         if (size == 'collapsed') {
             section.setAttribute('size', 'expanded');
