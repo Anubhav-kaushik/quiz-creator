@@ -41,9 +41,9 @@ function createQuizSectionHtml(sectionName, sectionData, sectionNumber, columnNa
         console.log(`Size: ${size}`);
 
         if (size == 'collapsed') {
-            container.setAttribute('size', 'expanded');
+            section.setAttribute('size', 'expanded');
         } else {
-            container.setAttribute('size', 'collapsed');
+            section.setAttribute('size', 'collapsed');
         }
     })
     section.append(sectionNameEle);
