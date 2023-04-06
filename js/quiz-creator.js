@@ -47,7 +47,9 @@ function createQuizSectionHtml(sectionName, sectionData, sectionNumber, columnNa
     const sectionNameEle = document.createElement('h2');
     sectionNameEle.classList.add('quiz-section-name');
     sectionNameEle.innerHTML = sectionName;
-    sectionNameEle.addEventListener('click', toggleContainer(section));
+    sectionNameEle.addEventListener('click', () => {
+        toggleContainer(section);
+    })
     section.append(sectionNameEle);
 
     let questionNumber = 1;
