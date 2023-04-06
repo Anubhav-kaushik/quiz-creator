@@ -24,7 +24,7 @@ function createQuizSections(quizSection, quizData) {
 }
 
 function toggleContainer(container) {
-    const size = container.getAttribute('size');
+    const size = container.size;
 
     if (size == 'expanded') {
         container.setAttribute('size', 'collapsed');
@@ -42,11 +42,11 @@ function createQuizSectionHtml(sectionName, sectionData, sectionNumber, columnNa
     section.classList.add('quiz-section');
     section.setAttribute(`section`, `${sectionNumber}`)
     section.setAttribute('size', 'expanded');
-    section.addEventListener('click', toggleContainer(this));
 
     const sectionNameEle = document.createElement('h2');
     sectionNameEle.classList.add('quiz-section-name');
     sectionNameEle.innerHTML = sectionName;
+    sectionNameEle.addEventListener('click', toggleContainer(section));
     section.append(sectionNameEle);
 
     let questionNumber = 1;
