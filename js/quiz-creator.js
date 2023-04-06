@@ -23,17 +23,6 @@ function createQuizSections(quizSection, quizData) {
     return quizSection
 }
 
-function toggleContainer(container) {
-    const size = container.size;
-    console.log(size);
-
-    if (size == 'expanded') {
-        container.setAttribute('size', 'collapsed');
-    } else {
-        container.setAttribute('size', 'expanded');
-    }
-}
-
 function createQuizSectionHtml(sectionName, sectionData, sectionNumber, columnNames = {
     'question': 'question',
     'correctOption': 'correctOption',
@@ -48,7 +37,14 @@ function createQuizSectionHtml(sectionName, sectionData, sectionNumber, columnNa
     sectionNameEle.classList.add('quiz-section-name');
     sectionNameEle.innerHTML = sectionName;
     sectionNameEle.addEventListener('click', () => {
-        toggleContainer(section);
+        const size = container.size;
+        console.log(`Size: ${size}`);
+
+        if (size == 'collapsed') {
+            container.setAttribute('size', 'expanded');
+        } else {
+            container.setAttribute('size', 'collapsed');
+        }
     })
     section.append(sectionNameEle);
 
