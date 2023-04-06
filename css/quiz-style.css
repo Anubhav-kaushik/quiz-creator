@@ -23,6 +23,7 @@
     padding-top: 0;
     overflow: hidden;
     transition: height 0.5s;
+    cursor: pointer;
 }
 
 .quiz-section[size="collapsed"] {
