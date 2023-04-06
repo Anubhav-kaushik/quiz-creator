@@ -25,6 +25,7 @@ function createQuizSections(quizSection, quizData) {
 
 function toggleContainer(container) {
     const size = container.size;
+    console.log(size);
 
     if (size == 'expanded') {
         container.setAttribute('size', 'collapsed');
