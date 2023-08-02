@@ -71,6 +71,8 @@ function createQuestionBlock(questionData, columnNames, sectionNumber, questionN
     questionIdBlock.classList.add('question-id');
     questionIdBlock.innerHTML = questionData[columnNames['questionId']];
 
+    questionBlock.append(questionIdBlock);
+
     const questionTextBlock = document.createElement('div');
     questionTextBlock.classList.add('question-text');
 
