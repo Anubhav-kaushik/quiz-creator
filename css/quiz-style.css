@@ -139,7 +139,7 @@
 .quiz-section .question-block {
     border: 1px solid rgb(208, 208, 208);
     background-color: rgb(255, 255, 255);
-    padding: 2.5rem;
+    padding: 2.5rem 3rem 2.5rem 2.5rem;
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
     margin: 0 0 1.2rem 0;
