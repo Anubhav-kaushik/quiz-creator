@@ -25,6 +25,7 @@ function createQuizSections(quizSection, quizData) {
 
 function createQuizSectionHtml(sectionName, sectionData, sectionNumber, columnNames = {
     'question': 'question',
+    'questionId': 'questionId',
     'correctOption': 'correctOption',
     'otherOptions': 'otherOptions'
 }) {
@@ -65,6 +66,10 @@ function createQuizSectionHtml(sectionName, sectionData, sectionNumber, columnNa
 function createQuestionBlock(questionData, columnNames, sectionNumber, questionNumber) {
     const questionBlock = document.createElement('div');
     questionBlock.classList.add('question-block-inner');
+
+    const questionIdBlock = document.createElement('div');
+    questionIdBlock.classList.add('question-id');
+    questionIdBlock.innerHTML = questionData[columnNames['questionId']];
 
     const questionTextBlock = document.createElement('div');
     questionTextBlock.classList.add('question-text');
