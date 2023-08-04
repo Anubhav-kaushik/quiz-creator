@@ -73,7 +73,7 @@
 }
 
 .quiz-section[section="1"] .question-id {
-    background: hsl(var(--clr-accent-1), 0.5);
+    background: hsl(var(--clr-accent-1), 0.8);
 }
 
 .quiz-section[section="2"] {
@@ -85,7 +85,7 @@
 }
 
 .quiz-section[section="2"] .question-id {
-    background: hsl(var(--clr-accent-2), 0.5);
+    background: hsl(var(--clr-accent-2), 0.8);
 }
 
 .quiz-section[section="3"] {
@@ -97,7 +97,7 @@
 }
 
 .quiz-section[section="3"] .question-id {
-    background: hsl(var(--clr-accent-3), 0.5);
+    background: hsl(var(--clr-accent-3), 0.8);
 }
 
 .quiz-section[section="4"] {
@@ -105,7 +105,7 @@
 }
 
 .quiz-section[section="4"] .question-id {
-    background: hsl(var(--clr-accent-4), 0.5);
+    background: hsl(var(--clr-accent-4), 0.8);
 }
 
 .quiz-section[section="4"] .quiz-section-name {
@@ -121,7 +121,7 @@
 }
 
 .quiz-section[section="5"] .question-id {
-    background: hsl(var(--clr-accent-5), 0.5);
+    background: hsl(var(--clr-accent-5), 0.8);
 }
 
 .quiz-section[section="6"] {
@@ -133,7 +133,7 @@
 }
 
 .quiz-section[section="6"] .question-id {
-    background: hsl(var(--clr-accent-6), 0.5);
+    background: hsl(var(--clr-accent-6), 0.8);
 }
 
 .quiz-section .question-block {
